@@ -1,6 +1,6 @@
 'use strict';
 
-const WebSocketServer = require('websocket').server;
+const WebSocketServer = require('ws').Server;
 const http = require('http');
 const server = http.createServer(function(request, response){
 });
@@ -10,8 +10,8 @@ server.listen(wsServerPort, function(){
   console.log("server is listening on port " + wsServerPort);
 });
 
-wsServer = new WebSocketServer({
-  httpServer: server
+const wsServer = new WebSocketServer({
+port: 8080
 });
 
 wsServer.on('request', function(request){
