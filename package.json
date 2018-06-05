@@ -1,0 +1,24 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "node training project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuzanneHuldt/node-training.git"
+  },
+  "author": "suze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuzanneHuldt/node-training/issues"
+  },
+  "homepage": "https://github.com/SuzanneHuldt/node-training#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
+  }
+}
